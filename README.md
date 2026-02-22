@@ -49,8 +49,11 @@ Dockerized Security Services
 🖥 Infrastructure Components
 
 Hypervisor
+
 	•	Proxmox VE
+
 	•	32GB RAM
+
 	•	Multiple VMs for isolation testing
 
 Core Server (HomeCore)
