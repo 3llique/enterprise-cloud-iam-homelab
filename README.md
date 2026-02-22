@@ -33,21 +33,27 @@ This lab is designed to mirror modern enterprise environments supporting cloud, 
 High-Level Flow
 
 Internet
+
 ↓
 
 ISP Router (Bridge Mode Planned)
+
 ↓
 
 Future Firewall (pfSense or UniFi)
+
 ↓
 
 Managed Switch
+
 ↓
 
 Proxmox Hypervisor
+
 ↓
 
 Ubuntu Server (HomeCore)
+
 ↓
 
 Dockerized Security Services
