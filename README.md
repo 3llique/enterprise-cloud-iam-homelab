@@ -5,6 +5,7 @@ Enterprise Cloud & IAM Security Home Lab
 🔎 Overview
 
 This repository documents my enterprise-style hybrid cloud and identity security lab built to simulate real-world:
+
 	•	Identity & Access Management (IAM)
 	•	Zero Trust remote access
 	•	Infrastructure hardening
@@ -18,6 +19,7 @@ This lab is designed to mirror modern enterprise environments supporting cloud, 
 ⸻
 
 🧠 Objectives
+
 	•	Design a Zero Trust home infrastructure
 	•	Implement secure remote access without port forwarding
 	•	Deploy containerized services securely
@@ -57,6 +59,7 @@ Hypervisor
 	•	Multiple VMs for isolation testing
 
 Core Server (HomeCore)
+
 	•	Ubuntu Server
 	•	Docker
 	•	16GB RAM
@@ -65,6 +68,7 @@ Core Server (HomeCore)
 ⸻
 
 🔐 Security Design
+
 	•	Zero Trust access using Tailscale
 	•	No exposed inbound ports
 	•	DNS filtering via AdGuard
@@ -77,6 +81,7 @@ Core Server (HomeCore)
 🧱 Core Services
 
 1️⃣ Tailscale (Zero Trust Remote Access)
+
 	•	Installed on:
 	•	HomeCore
 	•	Proxmox
@@ -88,6 +93,7 @@ Core Server (HomeCore)
 ⸻
 
 2️⃣ AdGuard (Network DNS Filtering)
+
 	•	Docker deployment
 	•	LAN-wide DNS resolution
 	•	Custom blocklists
@@ -96,6 +102,7 @@ Core Server (HomeCore)
 ⸻
 
 3️⃣ Wazuh (SIEM & Monitoring)
+
 	•	Host-level monitoring
 	•	Log collection
 	•	Security event visibility
@@ -104,6 +111,7 @@ Core Server (HomeCore)
 ⸻
 
 4️⃣ Portainer
+
 	•	Docker container management
 	•	Image lifecycle visibility
 	•	Simplified service orchestration
@@ -111,12 +119,14 @@ Core Server (HomeCore)
 ⸻
 
 5️⃣ Dozzle
+
 	•	Real-time Docker log monitoring
 	•	Lightweight visibility tool
 
 ⸻
 
 6️⃣ Homepage Dashboard
+
 	•	Centralized service navigation
 	•	Clean internal admin interface
 	•	Accessible via Tailscale only
@@ -126,6 +136,7 @@ Core Server (HomeCore)
 🧠 IAM Simulation Strategy
 
 Future phases include:
+
 	•	Active Directory VM
 	•	Role-based access testing
 	•	Conditional access scenarios
@@ -140,24 +151,28 @@ This aligns with enterprise IAM workflows used in Azure, AWS, and hybrid environ
 🚀 Roadmap Phases
 
 Phase 1 – Core Infrastructure
+
 	•	Proxmox deployment
 	•	Ubuntu Server
 	•	Dockerized services
 	•	Tailscale setup
 
 Phase 2 – Network Hardening
+
 	•	VLAN segmentation
 	•	Firewall rules
 	•	DNS enforcement
 	•	Switch-level configuration
 
 Phase 3 – Identity Layer
+
 	•	Active Directory lab
 	•	IAM testing
 	•	Privilege escalation scenarios
 	•	Logging & auditing
 
 Phase 4 – Cloud Integration
+
 	•	Azure/AWS hybrid identity simulation
 	•	Conditional access testing
 	•	MFA enforcement
@@ -166,6 +181,7 @@ Phase 4 – Cloud Integration
 ⸻
 
 🧠 Lessons Learned
+
 	•	Zero Trust removes need for port forwarding
 	•	DNS misconfiguration can disrupt routing
 	•	Service isolation improves troubleshooting
